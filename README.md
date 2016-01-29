@@ -13,7 +13,7 @@
 
 ### Slide, folder, and file naming
   
-  #### Example: `concentric-home`
+  **Example:** `concentric-home`
 
   **HTML:**
   `src/concentric-home.html`
