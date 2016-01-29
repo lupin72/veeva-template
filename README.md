@@ -25,7 +25,7 @@
   `src/assets/js/concentric-home.js`
 
   **Images:**
-  `img/concentric-home/your-image.png`
+  `src/assets/img/concentric-home/your-image.png`
 
 
 ### Folder and File Structure
