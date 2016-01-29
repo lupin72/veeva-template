@@ -22,9 +22,10 @@
   **Images:**
   `src/assets/img/global/global-image.png`
 
-## Slide Naming Convention
+## Setting up a new Slide
   
   All slides, folders, and files should be named as the description of the slide, this is **extremely important**.
+  This is per slide assets, functionality, and styling
 
   **Example:** `concentric-home`
 
