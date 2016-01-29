@@ -13,19 +13,19 @@
 
 ### Slide, folder, and file naming
   
-  Example: concentric-home
+  Example: `concentric-home`
 
-  HTML:
-  concentric-home.html
+  **HTML:**
+  `concentric-home.html`
 
-  SCSS/CSS (note: concentric-home needs to be added to the src/assets/scss/style.scss via import):
-  concentric-home.scss
+  **SCSS/CSS** (*note: concentric-home needs to be added to the src/assets/scss/style.scss via import*):
+  `concentric-home.scss`
 
-  JavaScript:
-  concentric-home.js
+  **JavaScript:**
+  `concentric-home.js`
 
-  Images:
-  img/concentric-home/
+  **Images:**
+  `img/concentric-home/`
 
 
 ### Folder and File Structure
