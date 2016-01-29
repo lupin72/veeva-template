@@ -9,10 +9,12 @@
 
 ## Veeva Template - Guidelines
 
-  All slides, folders, and files should be named as the description of the slide, this is extremely important.
-
-### Slide, folder, and file naming
   
+
+## Naming Convention
+  
+  All slides, folders, and files should be named as the description of the slide, this is **extremely important**.
+
   **Example:** `concentric-home`
 
   **HTML:**
