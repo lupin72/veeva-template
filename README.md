@@ -30,7 +30,7 @@
   `src/assets/img/concentric-home/your-image.png`
 
 
-### Folder and File Structure
+## SRC: Folder and File Structure
 
   * src
     * slide-name.html
@@ -45,7 +45,7 @@
           * slide images
       * js
         * lib 
-          * jquery
+          * jquery.js
         * main.js
         * slide-name.js
       * scss
