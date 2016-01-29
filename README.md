@@ -48,26 +48,26 @@
     * slide-name.html
     * assets
         * css
-          * output from scss
+            * output from scss
         * fonts
         * img
-          * global
-            * global images
-          * slide-name
-            * slide images
+            * global
+              * global images
+            * slide-name
+              * slide images
         * js
-          * lib 
-              * jquery.js
-          * main.js
-          * slide-name.js
+            * lib 
+                * jquery.js
+            * main.js
+            * slide-name.js
         * scss
-          * _main.scss
-          * _mixins.scss
-          * _normalize.scss
-          * _print.scss
-          * _slide-name.scss
-          * _variables.scss
-          * style.scss
+            * _main.scss
+            * _mixins.scss
+            * _normalize.scss
+            * _print.scss
+            * _slide-name.scss
+            * _variables.scss
+            * style.scss
 
 ## Gulp
 
