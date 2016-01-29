@@ -52,9 +52,9 @@
         * fonts
         * img
             * global
-              * global images
+                * global images
             * slide-name
-              * slide images
+                * slide images
         * js
             * lib 
                 * jquery.js
