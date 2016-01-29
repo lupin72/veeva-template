@@ -10,6 +10,8 @@
 ## Veeva Template - Guidelines
 
 ## Global Assets
+  
+  This should be the global assets, functionality, and styling for the presentation
 
   **SCSS/CSS:**
   `src/assets/scss/_main.scss`
