@@ -9,9 +9,18 @@
 
 ## Veeva Template - Guidelines
 
-  
+## Global Assets
 
-## Naming Convention
+  **SCSS/CSS:**
+  `src/assets/scss/_main.scss`
+
+  **JavaScript:**
+  `src/assets/js/main.js`
+
+  **Images:**
+  `src/assets/img/global/global-image.png`
+
+## Slide Naming Convention
   
   All slides, folders, and files should be named as the description of the slide, this is **extremely important**.
 
@@ -21,7 +30,7 @@
   `src/concentric-home.html`
 
   **SCSS/CSS** (*note: concentric-home needs to be added to the src/assets/scss/style.scss via import*):
-  `src/assets/scss/concentric-home.scss`
+  `src/assets/scss/_concentric-home.scss`
 
   **JavaScript:**
   `src/assets/js/concentric-home.js`
