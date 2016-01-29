@@ -16,16 +16,16 @@
   Example: `concentric-home`
 
   **HTML:**
-  `concentric-home.html`
+  `src/concentric-home.html`
 
   **SCSS/CSS** (*note: concentric-home needs to be added to the src/assets/scss/style.scss via import*):
-  `concentric-home.scss`
+  `src/assets/scss/concentric-home.scss`
 
   **JavaScript:**
-  `concentric-home.js`
+  `src/assets/js/concentric-home.js`
 
   **Images:**
-  `img/concentric-home/`
+  `img/concentric-home/your-image.png`
 
 
 ### Folder and File Structure
