@@ -3,6 +3,11 @@
 @import "normalize";
 @import "main";
 @import "print";
+
+// Import slides
+// @import them below so they will be compiled
+// They must be named the same as the .html file ( slide-one.html === _slide-one.scss )
+
 @import "sample-slide";
 @import "sample-slide-second";
 @import "sample-slide-third";
