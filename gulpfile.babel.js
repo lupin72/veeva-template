@@ -19,8 +19,16 @@ const reload = browserSync.reload;
 
 // Lint JavaScript
 gulp.task('lint', () =>
-  gulp.src('src/assets/js/**/*.js')
-    .pipe($.eslint())
+  gulp.src(['src/assets/js/**/*.js', '!src/assets/js/lib/**'])
+    .pipe($.eslint({
+      globals: { 
+        'jQuery':true, 
+        '$':true 
+      },
+      rules: {
+        'padded-blocks': 0
+      }
+    }))
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failOnError()))
 );
@@ -152,6 +160,9 @@ gulp.task('scripts', () => {
         // Note: Since we are not using useref in the scripts build pipeline,
         //       you need to explicitly list your scripts here in the right order
         //       to be correctly concatenated
+        './src/assets/js/lib/jquery-1.12.0.min.js',
+        // Add Script Libraries Here or Above
+        // './src/assets/js/lib/YOURLIBRARY.js',
         './src/assets/js/main.js',
         './src/assets/js/' + htmlFileName + '.js'
       ])
