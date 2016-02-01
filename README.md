@@ -92,55 +92,36 @@
 
 ### Using Gulp Commands
   
-  Using the command `gulp` this will run the *default task* which is to build the entire project into the build directory
+  -`gulp` this will run the *default task* which is to build the entire project into the build directory
 
-    gulp
+  -`gulp lint` this will lint all the javascript within the `src/assets/js` directory. 
 
-  Using the command `gulp lint` this will lint all the javascript within the `src/assets/js` directory. *Note: This doesn't not include the `src/assets/js/lib` directory and files*
+    *Note: This doesn't not include the `src/assets/js/lib` directory and files*
 
-    gulp lint
+  -`gulp images` this will optimize and sort all the images from `src/assets/img/global` and `src/assets/img/your-slide` into the corrosponding directory in build
 
-  Using the command `gulp images` this will optimize and sort all the images from `src/assets/img/global` and `src/assets/img/your-slide` into the corrosponding directory in build
+  -`gulp fonts` this will migrate the fonts from src to build for each slides directory
 
-    gulp images
+  -`gulp copy` this will copy any files and directories other than what is in the `assets` directory to each slide directory
 
-  Using the command `gulp fonts` this will migrate the fonts from src to build for each slides directory
+  -`gulp styles` this will compile the `.scss` files within `src/assets/scss` and output them into the the build directory for each slide. This will also build a copy into `src/assets/css`. 
 
-    gulp fonts
+    *Note: You must add your slides `.scss` file to the `src/assets/scss/style.scss`*
 
-  Using the command `gulp copy` this will copy any files and directories other than what is in the `assets` directory to each slide directory
+  -`gulp scripts` this will compile the `src/assets/js/main.js` and concatenate the file with each slides `.js` file. This will output into `build/assets/js/main.min.js` for each slides directory in the build directory.
 
-    gulp copy
+    *Note: If you want to add more libraries to be concatenated with the main.min.js if you find the `gulp.task` for scripts in the `gulpfile.babel.js` in the main directory of the project you can add them below or above `jquery-1.12.0.min.js` depending on which order you want them added.*
 
-  Using the command `gulp styles` this will compile the `.scss` files within `src/assets/scss` and output them into the the build directory for each slide. This will also build a copy into `src/assets/css`. *Note: You must add your slides `.scss` file to the `src/assets/scss/style.scss`*
+  -`gulp html` this will minify and output the html files into their slides directory 
 
-    gulp styles
+    *Example: `src/homepage-isi.html` will output into `build/homepage-isi/homepage-isi.html`
 
-  Using the command `gulp scripts` this will compile the `src/assets/js/main.js` and concatenate the file with each slides `.js` file. This will output into `build/assets/js/main.min.js` for each slides directory in the build directory.
+  -`gulp clean` this will empty the build and .tmp directories
 
-  *Note: If you want to add more libraries to be concatenated with the main.min.js if you find the `gulp.task` for scripts in the `gulpfile.babel.js` in the main directory of the project you can add them below or above `jquery-1.12.0.min.js` depending on which order you want them added.*
+  -`gulp serve` this will start a local server to host the `src` version of the files. **This will also watch any changes to html, scss/css, js, and images and run their gulp task ( scss would compile when changed, etc.. ).** 
 
-    gulp scripts
+    *Note: The terminal will output a message where the server can be located, if you want to serve the build files instead use `gulp serve:build`*
 
-  Using the command `gulp html` this will minify and output the html files into their slides directory *Example: `src/homepage-isi.html` will output into `build/homepage-isi/homepage-isi.html`
+  -`gulp server:build` this will do the same as `gulp serve` but instead it would host the files from the build directory
 
-    gulp html
-
-  Using the command `gulp clean` this will empty the build and .tmp directories
-
-    gulp clean
-
-  Using the command `gulp serve` this will start a local server to host the `src` version of the files. **This will also watch any changes to html, scss/css, js, and images and run their gulp task ( scss would compile when changed, etc.. ).** 
-
-  *Note: The terminal will output a message where the server can be located, if you want to serve the build files instead use `gulp serve:build`*
-
-    gulp serve
-
-  Using the command `gulp server:build` this will do the same as `gulp serve` but instead it would host the files from the build directory
-
-    gulp serve:build
-
-  Using the command `gulp zip` this will zip each slides directory within the build folder into a directory called `dist` each slide's directory and assets should be zipped individually
-
-    gulp zip
-
+  -`gulp zip` this will zip each slides directory within the build folder into a directory called `dist` each slide's directory and assets should be zipped individually
