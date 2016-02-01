@@ -92,7 +92,9 @@
 
 ### Using Gulp Commands
   
-  - `gulp` this will run the *default task* which is to build the entire project into the build directory
+  - `gulp` this will run the *default task* which is to build the entire project into the build directory.
+
+    *Note: This will run the following tasks: styles, lint, html, scripts, images, fonts, copy*
 
   - `gulp lint` this will lint all the javascript within the `src/assets/js` directory. 
 
