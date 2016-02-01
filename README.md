@@ -72,7 +72,7 @@
 
 ## Gulp
 
-  When you first clone the Veeva Template, in the Terminal cd ( cd = current directory || EXAMPLE: cd /projects/veeva-template ) into the veeva template directory. 
+  When you first clone the Veeva Template, in the Terminal cd ( cd = current directory || EXAMPLE: `cd /projects/veeva-template` ) into the veeva template directory. 
 
 ### Installing NPM dependacies for the Veeva Template
 
