@@ -310,7 +310,7 @@ gulp.task('zip', function(){
 
           gulp.src('./build/'+fileName+'/**/*')
               .pipe(zip(fileName+'.zip'))
-              .pipe(gulp.dest('build/zipped'));
+              .pipe(gulp.dest('dist'));
 
           return stream;
 
