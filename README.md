@@ -96,7 +96,7 @@
 
     gulp
 
-  Using the command `gulp lint` this will lint all the javascript within the `src/assets/js` directory minus the lib directory
+  Using the command `gulp lint` this will lint all the javascript within the `src/assets/js` directory. *Note: This doesn't not include the `src/assets/js/lib` directory and files*
 
     gulp lint
 
