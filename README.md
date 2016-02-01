@@ -91,9 +91,12 @@
     sudo npm install NPM-PACKAGE --save
 
 ### Using Gulp Commands
+  
+  Using the command `gulp` this will run the *default task* which is to build the entire project into the build directory
 
     gulp
+
+  Using the command `gulp lint` this will lint all the javascript within the `src/assets/js` directory minus the lib directory
 
     gulp lint
 
-    gulp

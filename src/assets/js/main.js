@@ -1,7 +1,7 @@
 (function($, root) {
   // $ === jQuery
   // root === window
-  // helps with minifying js + memory
+  // helps protect global scope, minifying, and memory management
 
   $(function() {
 
