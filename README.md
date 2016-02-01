@@ -92,11 +92,15 @@
 
 ### Using Gulp Commands
   
-  Using the command `gulp` this will run the *default task* which is to build the entire project into the build directory
+  - Using the command `gulp` this will run the *default task* which is to build the entire project into the build directory
 
-    gulp
+      gulp
 
-  Using the command `gulp lint` this will lint all the javascript within the `src/assets/js` directory. *Note: This doesn't not include the `src/assets/js/lib` directory and files*
+  - Using the command `gulp lint` this will lint all the javascript within the `src/assets/js` directory. *Note: This doesn't not include the `src/assets/js/lib` directory and files*
 
-    gulp lint
+      gulp lint
+
+  - Using the command `gulp images` this will optimize and sort all the images from `src/assets/img/global` and `src/assets/img/your-slide` into the corrosponding directory in build
+
+      gulp images
 
