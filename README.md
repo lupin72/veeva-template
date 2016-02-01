@@ -1,3 +1,4 @@
+
 # Veeva Gulp Template
 
 ## Requirments 
@@ -42,10 +43,10 @@
   `src/assets/img/concentric-home/your-image.png`
 
 
-## SRC: Folder and File Structure
+## SRC: Directory and File Structure
 
-  * src
-    * slide-name.html
+  * **src**
+    * *slide-name.html*
     * assets
         * css
             * output from scss
@@ -53,19 +54,19 @@
         * img
             * global
                 * global images
-            * slide-name
+            * *slide-name*
                 * slide images
         * js
             * lib 
                 * jquery.js
             * main.js
-            * slide-name.js
+            * *slide-name.js*
         * scss
             * _main.scss
             * _mixins.scss
             * _normalize.scss
             * _print.scss
-            * _slide-name.scss
+            * *_slide-name.scss*
             * _variables.scss
             * style.scss
 
@@ -76,7 +77,7 @@
 ### Installing NPM dependacies for the Veeva Template
 
   To install the packages required to run the Gulp task to build the Veeva Template you need to run the following command from the Veeva Template directory
-  Note: sudo maybe required dependenant on security settings    
+  *Note: sudo maybe required dependenant on security settings*    
 
     npm install
 
@@ -85,8 +86,14 @@
     sudo npm install
 
   Adding new NPM packages:
-  Note: The flag --save will add it to the package.json file so it will be included for version control
+  *Note: The flag --save will add it to the package.json file so it will be included for version control*
 
     sudo npm install NPM-PACKAGE --save
 
-### Using Gulp to build
+### Using Gulp Commands
+
+    gulp
+
+    gulp lint
+
+    gulp
