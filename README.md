@@ -1,7 +1,6 @@
-
 # Veeva Gulp Template
 
-## Requirments 
+## Requirements 
 
   * NodeJS
   * npm (node package manager)
