@@ -51,7 +51,7 @@ gulp.task('images', () => {
 
         .pipe(gulp.dest('build/'+ htmlFileName +'/assets/img/global'))
 
-        .pipe($.size({title: 'images:'}));
+        .pipe($.size({title: 'global images:'}));
 
       // Individual slide images
       var slideImages = gulp.src('src/assets/img/' + htmlFileName + '/**/*')
@@ -62,10 +62,20 @@ gulp.task('images', () => {
 
         .pipe(gulp.dest('build/'+ htmlFileName +'/assets/img/' + htmlFileName))
 
-        .pipe($.size({title: 'images:'}));
+        .pipe($.size({title: 'slide images:'}));
+
+      var slideThumbImages = gulp.src('src/assets/thumbs/' + htmlFileName + '/**/*')
+        .pipe($.imagemin({
+          progressive: true,
+          interlaced: true
+        }))
+
+        .pipe(gulp.dest('build/'+ htmlFileName))
+
+        .pipe($.size({title: 'thumb images:'}));
 
       // Merge streams for image output
-      return merge(globalImages, slideImages);
+      return merge(globalImages, slideImages, slideThumbImages);
 
     }))
 
