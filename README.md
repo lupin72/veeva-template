@@ -5,7 +5,7 @@
   * NodeJS
   * npm (node package manager)
   * Gulp -- recommended to be installed globally
-    * sudo npm install --global gulp
+    * `sudo npm install --global gulp`
 
 ## Veeva Template - Guidelines
 
