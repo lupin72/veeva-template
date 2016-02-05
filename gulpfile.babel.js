@@ -286,7 +286,12 @@ gulp.task('serve:build', ['default'], () =>
     // https: true,
     server: 'build',
     port: 3001
-  })
+  });
+
+  gulp.watch(['src/**/*.html'], reload);
+  gulp.watch(['src/assets/scss/**/*.{scss,css}'], ['styles', reload]);
+  gulp.watch(['src/assets/js/**/*.js'], ['lint', 'scripts']);
+  gulp.watch(['src/assets/img/**/*'], reload);
 );
 
 // Build production files, the default task
