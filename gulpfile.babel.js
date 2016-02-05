@@ -288,10 +288,10 @@ gulp.task('serve:build', ['default'], () => {
     port: 3001
   });
 
-  gulp.watch(['src/**/*.html'], reload);
+  gulp.watch(['src/**/*.html'], ['html', reload]);
   gulp.watch(['src/assets/scss/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['lint', 'scripts']);
-  gulp.watch(['src/assets/img/**/*'], reload);
+  gulp.watch(['src/assets/img/**/*'], ['images', reload]);
 });
 
 // Build production files, the default task
