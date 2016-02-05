@@ -274,7 +274,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
 });
 
 // Build and serve the output from the build build
-gulp.task('serve:build', ['default'], () =>
+gulp.task('serve:build', ['default'], () => {
   browserSync({
     notify: false,
     logPrefix: 'WSK',
@@ -292,7 +292,7 @@ gulp.task('serve:build', ['default'], () =>
   gulp.watch(['src/assets/scss/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['src/assets/js/**/*.js'], ['lint', 'scripts']);
   gulp.watch(['src/assets/img/**/*'], reload);
-);
+});
 
 // Build production files, the default task
 gulp.task('default', ['clean'], cb =>
